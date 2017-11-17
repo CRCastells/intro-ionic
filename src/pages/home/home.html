@@ -3,13 +3,17 @@
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding class='container'>
-  <select class='form-control' [(ngModel)]="category" (ngModelChange)="gimmeJoke()">
-  	<option>Select a Category</option>
-    <option> nerdy </option>
-    <option> explicit </option>
-  </select>
-  <br>
-  <img src="http://iconpopanswers.com/wp-content/uploads/2013/04/icomania-large-149.jpg" alt="Chuck Norris">
-  <h1 class="jumbotron text-center">{{joke}}</h1>
+<ion-content padding>
+  <div class="container">
+    <div class='row justify-content-center'>
+      <select class='form-control' [(ngModel)]="category" (ngModelChange)="gimmeJoke()">
+        <option>Select a Category</option>
+        <option> nerdy </option>
+        <option> explicit </option>
+      </select>
+      <br>
+      <img src="http://iconpopanswers.com/wp-content/uploads/2013/04/icomania-large-149.jpg" alt="Chuck Norris">
+      <h1 class="jumbotron text-center">{{joke}}</h1>
+    </div>
+  </div>
 </ion-content>
